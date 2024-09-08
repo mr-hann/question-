@@ -1,0 +1,210 @@
+ *,*::before,
+   *::after{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+   }
+   
+   body{
+      font-family:sans-serif,curly;
+      font-size:25px;
+      font-wight:600;
+      background:#f3f3f3;
+      color:#27272a;
+      
+   }
+   .dark-layer{
+      position: absolute;
+      background:#0d0f1a88;
+      width:100%;
+      height:100vh;
+      z-index:2;
+   }
+   .pop-up{
+      background:#fff;
+      height:240px;
+      width:80%;
+      margin:10% auto;
+      padding:30px 15px;
+      border-radius:25px;
+   }
+   .pop-up h3{
+      text-align:center;
+      
+   }
+   .pop-up input{
+      font-wight:500;
+      font-size:19px;
+      padding:2px;
+      width:100%;
+      display:block;
+      border:none;
+      border-bottom:1px solid #ff742b;
+      margin-top:25px;
+      outline:none;
+      
+   }
+   .pop-up button{
+      font-wight:500;
+      font-size:19px;
+      width:40%;
+      display:block;
+      margin:25px 0;
+      border:1px solid #ff742b;
+      border-radius:5px;
+      padding:10px;
+      background:#ff742b;
+      color:#fff;
+   }
+   small{
+      font-size:12px;
+      font-wight:400;
+      display: block;
+      text-align:center;
+   }
+   section{
+      height:100vh;
+      width:100vw;
+   }
+   .header-text{
+      text-align:center;
+      margin:20px auto 30px auto;
+   }
+   .quiz-box{
+      display:block;
+      width:96%;
+      height:auto;
+      background:inherit;
+      margin:5% auto;
+      color:#27272a;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius:15px;
+      padding:40px 30px;
+   }
+   ul{
+      list-style:none;
+      margin-top:30px;
+   }
+   li{
+      margin-top:20px;
+   }
+  .question{
+     font-family:monospace;
+     line-hight:1.5;
+     later-spacing:2px;
+  }
+   .pagination{
+      margin-top:3em;
+      display:grid;
+      grid-template-columns:auto auto;
+      justify-item:space-between;
+      justify-content:space-between;
+      
+   }
+   .pagination button{
+      font-size:20px;
+      background:#ff742b;
+      color:#f3f3f3;
+      padding:5px;
+      width:120px;
+      height:45px;
+      border-radius:5px;
+      outline:none;
+      border:1px solid #ff742b;
+   }
+   .prv{
+      visibility:hidden;
+   }
+   .progress-bar{
+      display:block;
+      width:100%;
+      background:#ff742b;
+      border-radius:2px;
+      height:6px;
+      margin-bottom:1.3em;
+   }
+ 
+   
+   /* Customize the label (the container) */
+.check-container {
+  display: block;
+  font-family:monospace;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e1e1e1;
+  border:1px solid #e1e1e1;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a colored background */
+.check-container input:checked ~ .checkmark {
+  background-color: #ff742b;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.check-container .checkmark:after {
+  top: 8px;
+  left: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f3f3f3;
+}
+
+@media only screen and (min-width: 768px) {
+
+ .pop-up{
+      height:240px;
+      width:30%;
+      margin:10% auto;
+      
+   }
+
+.quiz-box{
+      width:40%;
+}
+
+
+}
